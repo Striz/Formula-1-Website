@@ -32,11 +32,11 @@ $(document).ready(function() {
 
 
 // smoothscrolling
-$('ul > li > a').smoothScroll({
-  duration: 1000,
-  easing: 'swing',
-  offset: 0
-});
+//$('ul > li > a').smoothScroll({
+//  duration: 1000,
+//  easing: 'swing',
+//  offset: 0
+//});
 
 // hover screens
 
@@ -63,4 +63,4 @@ opacity: 0
 });
 });
 
-// active link 
+
