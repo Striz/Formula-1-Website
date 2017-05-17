@@ -1,126 +1,161 @@
-*{
-    margin: 0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-html, body{
-    font-weight: 400;
-    font-family: Arial, Helvetica sans-serif;
-    background-color: #ede9ea;
-    height: 100%;
-    font-size: 100%;
-    line-height: 1.5em
+html, body {
+  font-weight: 400;
+  font-family: Arial, Helvetica sans-serif;
+  background-color: #ede9ea;
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.5em
 }
 h5 {
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    line-height: 25px;
-    text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 25px;
+  text-transform: uppercase;
 }
-.clear{
-    clear: both;
-    margin:0;
-    padding:0;
+.clear {
+  clear: both;
+  margin: 0;
+  padding: 0;
 }
+p {
+  font-size: 16px;
+  line-height: 28px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /********* navigation bar ***********/
-.navBar{
+
+.navBar {
   overflow: hidden;
   position: fixed !important;
   top: 0;
   width: 100%;
-  z-index: 9;  
-  	-webkit-box-shadow: 0 8px 6px -6px black;
-	   -moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;    
-    background-color: rgba(244, 243, 239, .5 );
+  z-index: 9;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  background-color: rgba(244, 243, 239, .5);
 }
-
-.navbar-logo{
-    height: 1.7em;
-    margin-top: .1em;
-    border-radius: .2em;
+.navbar-logo {
+  height: 1.7em;
+  margin-top: .1em;
+  border-radius: .2em;
 }
-
 nav ul a.active {
-  background-color: rgba(250,250,250, .85);
-    transition: all ease .7s;
-    border-radius: .4em;
+  background-color: rgba(172, 172, 172, .4);
+  transition: all ease .7s;
+  border-radius: .4em;
 }
+i.material-icons {
+  color: #030504;
+}
+
 /**home**/
-#homeImage {
-    background: linear-gradient(rgba(1, 1, 1, .3), rgba(1, 1, 1, 0.1)), url(../images/f1.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: top !important;
-    padding: 7% 5% 0 5%;
-    height: auto;
-}
-.header{ 
-    padding:3%;
-    line-height: 1.1;
-    font-weight: 700;
-    letter-spacing: 3px;
-    font-size: 2.5rem;
-}
 
-.handMobile{
-
+.homeImage {
+  background: linear-gradient(rgba(1, 1, 1, .3), rgba(1, 1, 1, 0.1)), url(../images/f1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: top !important;
+  padding: 7% 5% 0 5%;
+  height: auto;
+  margin: 0;
+}
+.header {
+  padding: 3%;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+.handMobile {
   margin: -.9%;
 }
-.downloadBtn{
-    margin-top: 5%;
-    background: rgba(0,0,0, .1);
-    border: 1px white solid;
-    border-radius: .5em;
-    font-weight: 600;
-    letter-spacing: .1em;
+.downloadBtn {
+  margin-top: 5%;
+  background: rgba(0, 0, 0, .1);
+  border: 1px white solid;
+  border-radius: .5em;
+  font-weight: 600;
+  letter-spacing: .1em;
 }
-.downloadBtn:focus ,
-.downloadBtn:hover{ 
-    background-color: rgba(204,204,204, .75);    /**#ea8b2e; **/
-    color: #000b0a;
-    transition: all .7s ease;
+.downloadBtn:focus, .downloadBtn:hover {
+  background-color: rgba(204, 204, 204, .75);
+  /**#ea8b2e; **/
+  color: #000b0a;
+  transition: all .7s ease;
 }
 
 /*****  Features *****/
-#features{
-    width:80%;
+
+.features {
+  width: 80%;
 }
-.samsungFrame{
-    margin: -2%;
+.samsungFrame {
+  margin: -2%;
 }
-.features-list-left{
-    text-align: right;
+.features-list-left {
+  text-align: right;
 }
 .features-list-item {
-    margin: 25% 0;
-  }
-/*** screen Page  ****/
-#screenPage{
-    width:80%;
+  margin: 25% 0;
 }
 
+/*****  display none  *******/
 
-/* css-method */
+.samsungMedia {
+  display: none;
+}
+
+/*** screen Page  ****/
+
+#screenPage {
+  width: 80%;
+}
+.screenImage {}
+.imageHolder {
+  position: relative;
+  background: #000;
+}
+.screenImage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all .7s ease;
+  backface-visibility: hidden;
+  border: 3px solid black;
+  border-radius: .4em;
+}
+.imageHolder:hover .screenImage {
+  opacity: 0.3;
+  z-index: 9;
+}
 
 /** footer Social Links**/
+
 .social-media-links {
   margin: 2%;
   padding: 0;
   list-style: none;
 }
-
 .social-media-links li {
   display: inline-block;
   margin-left: 10px;
 }
-
 .social-media-links li:first-child {
   margin-left: 0;
 }
-
 .social-media-links li i {
   display: inline-block;
   width: 40px;
@@ -128,9 +163,7 @@ nav ul a.active {
   font-size: 20px;
   line-height: 40px;
   text-align: center;
- 
 }
-
 .social-media-links li a {
   display: inline-block;
   border-radius: 50%;
@@ -140,58 +173,62 @@ nav ul a.active {
   color: #fff;
 }
 .copyright {
-    text-align: center;
+  text-align: center;
   overflow: hidden;
   min-height: 50px;
   padding: 10px 0px;
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(51, 51, 51, 0.08);
 }
-.social-media-links li a:focus,
-.social-media-links li a:hover {
-  background-color:  #cccccc;    /**#ea8b2e; **/
-    color: #000b0a;
-    transition: .6s;
-    
+.social-media-links li a:focus, .social-media-links li a:hover {
+  background-color: #cccccc;
+  /**#ea8b2e; **/
+  color: #000b0a;
+  transition: .6s;
 }
 
 /**** parallax ***/
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, .9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+  width: 100%;
+}
 
 /***  Media querries  ****/
+
 @media only screen and (max-width: 1280px) {
-  
-
-  .handMobile {
-    margin: -1.5%;
-}
-}
-
-@media only screen and (max-width: 1024px) {
-  
-.features-list-item:first-child {
-    margin-bottom: 20%;
-
+  .samsungFrame {
+    margin-bottom: -2.1%;
   }
-
-.features-list-item {
+  .handMobile {
+    margin: -1.6%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .homeImage {
+    background: linear-gradient(rgba(1, 1, 1, .3), rgba(1, 1, 1, 0.1)), url(../images/f1.jpg);
+    background-size: cover;
+    background-position: top !important;
+  }
+  .features-list-item:first-child {
+    margin-bottom: 20%;
+  }
+  .features-list-item {
     margin: 0;
-
   }
   .handMobile {
     margin: -2%;
+  }
+  .samsungFrame {
+  margin: -3.1%;
 }
 }
-
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -199,36 +236,71 @@ nav ul a.active {
   #index-banner .section {
     top: 10%;
   }
-
   .handMobile {
     margin: -2%;
-
-} 
-.downloadBtn{
-  margin:4%;
+  }
+  .downloadBtn {
+    margin: 4%;
+  }
+  .features-list-left, .features-list {
+    text-align: center;
+  }
 }
-
-.features-list-left, 
-.features-list{
-  text-align: center;
+@media screen and (min-width: 400px) and (max-width: 992px) {
+  .samsungMedia {
+    display: block;
+  }
+  .samsungMedia img {
+    width: 36%;
+  }
+  .samsungFrame {
+    margin: -1.2%;
+  }
 }
+@media only screen and (max-width: 768px) {
+  .features {
+    width: 90%;
+  }
 }
-
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0;
   }
+  .navbar-logo {
+    height: 1.5em;
+  }
+  .features-list-item:first-child {
+    margin: 5% 0 4% 0;
+  }
+  .screenImage {
+    margin-top: 10%;
+  }
 }
-
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
   font-size: inherit;
 }
-
 footer.page-footer {
   margin: 0;
 }
+
 /**  https://codepen.io/kmmbvnr/pen/XNXVaY  ***/
 
+
+/* iphone */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  img {
+    max-width: 100%;
+  }
+}
+
+/* ipad */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  img {
+    max-width: 100%;
+  }
+}
