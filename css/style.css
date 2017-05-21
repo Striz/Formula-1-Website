@@ -200,8 +200,8 @@ i.material-icons {
 }
 
 /***  Media querries  ****/
-
-@media only screen and (max-width: 1280px) {
+@media screen and (min-width: 1025px) and (max-width: 1280px)
+ {
   .samsungFrame {
     margin-bottom: -2.1%;
   }
