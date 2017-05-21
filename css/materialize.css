@@ -7137,7 +7137,7 @@ input[type=range]:focus::-ms-fill-upper {
   height: -moz-calc(100%);
   padding-bottom: 60px;
   background-color: #fff;
-  z-index: 999;/******************************/
+  z-index: 999;
   overflow-y: auto;
   will-change: transform;
   -webkit-backface-visibility: hidden;
@@ -7330,16 +7330,16 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav .collapsible-body {
   padding: 0;
 }
-/***********************************************************/
+
 #sidenav-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 120vh;
- background-color: rgba(0, 0, 0, 0.5);
-  z-index: 0;
-  will-change: opacity; 
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 8;
+  will-change: opacity;
 }
 
 /*
