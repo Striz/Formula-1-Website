@@ -7137,7 +7137,7 @@ input[type=range]:focus::-ms-fill-upper {
   height: -moz-calc(100%);
   padding-bottom: 60px;
   background-color: #fff;
-  z-index: 8;/******************************/
+  z-index: 999;/******************************/
   overflow-y: auto;
   will-change: transform;
   -webkit-backface-visibility: hidden;
@@ -7338,7 +7338,7 @@ input[type=range]:focus::-ms-fill-upper {
   right: 0;
   height: 120vh;
  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 10;
   will-change: opacity; 
 }
 
