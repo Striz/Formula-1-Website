@@ -277,9 +277,8 @@ i.material-icons {
   }
   .navBar {
     position: static;
-    z-index: 9;
+    margin:0;
     width: 100%;
-    top: 0;
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0 8px 6px -6px black;
