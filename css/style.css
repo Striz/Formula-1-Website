@@ -261,6 +261,15 @@ i.material-icons {
   .features {
     width: 90%;
   }
+    .navBar {
+    position: static;
+    margin:0;
+    width: 100%;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    background-color: rgba(244, 243, 239, .5);
+  }
 }
 @media only screen and (max-width: 600px) {
   #index-banner .section {
@@ -274,17 +283,6 @@ i.material-icons {
   }
   .screenImage {
     margin-top: 10%;
-  }
-}
-@media only screen and (max-width: 767px) and (min-width: 400px) {
-  .navBar {
-    position: static;
-    margin:0;
-    width: 100%;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
-    background-color: rgba(244, 243, 239, .5);
   }
 }
 .icon-block {
